@@ -44,3 +44,17 @@ footer{padding-top:42px;padding-bottom:42px}
   .hero{padding-bottom:22px}
   .statement{padding-top:34px}
 }
+
+/* Give the experience description a clear, intentional home. */
+.statement>p:last-child{
+  max-width:680px;
+  padding:28px 30px;
+  background:linear-gradient(135deg,#e3b570 0%,var(--gold) 100%);
+  color:#2c1d18;
+  border:1px solid rgba(111,67,25,.18);
+  border-radius:10px;
+  box-shadow:0 18px 42px rgba(91,53,24,.14);
+}
+@media(max-width:600px){
+  .statement>p:last-child{padding:22px 20px}
+}
