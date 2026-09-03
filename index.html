@@ -68,17 +68,17 @@
         </div>
         <div class="form-row">
           <label>Email address<input name="email" type="email" autocomplete="email" placeholder="example@gmail.com" required></label>
-          <label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label>
+          <label>Phone number<input name="phone" type="tel" autocomplete="tel" placeholder="(###) ###-####" required></label>
         </div>
         <div class="form-row">
           <label>Event date<input name="event_date" type="date" required></label>
-          <label>Type of event<input name="occasion" type="text" required></label>
+          <label>Type of event<input name="occasion" type="text" placeholder="Wedding, birthday, shower, etc." required></label>
         </div>
         <div class="form-row">
           <label>Event location<input name="location" required></label>
           <label>Estimated guest count<input name="guest_count" type="number" min="1" required></label>
         </div>
-        <label>Tell us about your event<textarea name="message" rows="4" required></textarea></label>
+        <label>Tell us about your event<textarea name="message" rows="4" placeholder="Share your vision, timing, dietary considerations, or anything else we should know." required></textarea></label>
         <label class="consent"><input type="checkbox" name="inquiry_acknowledgement" value="Confirmed" required><span>I understand this is an inquiry and does not reserve my date.</span></label>
         <button class="button primary" type="submit">Send inquiry</button>
         <p class="form-status" id="formStatus" aria-live="polite">We’ll respond as soon as possible about availability.</p>
