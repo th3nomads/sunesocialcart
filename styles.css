@@ -13,8 +13,11 @@
 .form-status.success{color:#e5bd84}
 .form-status.error{color:#ff9da8}
 .inquiry button:disabled{opacity:.6;cursor:wait}
-.inquiry input[type="date"]{color-scheme:dark}
-.inquiry input[type="date"]::-webkit-calendar-picker-indicator{filter:invert(1);opacity:.95;cursor:pointer}
+.inquiry input[type="date"]::-webkit-calendar-picker-indicator{
+  filter:invert(1) brightness(2);
+  opacity:1;
+  cursor:pointer;
+}
 .brand img{width:72px;height:72px;aspect-ratio:1;border-radius:50%;object-fit:cover}
 footer img{width:115px;height:115px;aspect-ratio:1;border-radius:50%;object-fit:cover}
 @media(max-width:600px){.brand img{width:62px;height:62px}}
