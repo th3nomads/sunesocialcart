@@ -104,3 +104,12 @@ footer{padding-top:42px;padding-bottom:42px}
   .package-logos{gap:14px}
   .package-logos a{width:78px;height:78px}
 }
+
+
+/* Preserve the full TH3NOMADS logo inside the partnership circle. */
+.partner-package .package-logos a:nth-of-type(2) img{
+  object-fit:contain;
+  object-position:center;
+  padding:10px;
+  background:#080808;
+}
