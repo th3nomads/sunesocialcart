@@ -21,3 +21,17 @@ footer img{width:115px;height:115px;aspect-ratio:1;border-radius:50%;object-fit:
 .hero{align-items:start;padding-top:38px}
 @media(max-width:900px){.hero{padding-top:34px}}
 @media(max-width:600px){.hero{padding-top:28px}}
+
+/* Tighter vertical rhythm between homepage sections. */
+.hero{padding-bottom:52px}
+.statement{padding-top:76px;padding-bottom:76px}
+.cart-showcase{padding-bottom:76px}
+.process{padding-top:76px;padding-bottom:76px}
+.inquiry{padding-top:76px;padding-bottom:76px}
+footer{padding-top:42px;padding-bottom:42px}
+@media(max-width:600px){
+  .hero{padding-bottom:46px}
+  .statement,.process,.inquiry{padding-top:54px;padding-bottom:54px}
+  .cart-showcase{padding-bottom:54px}
+  footer{padding-top:36px;padding-bottom:36px}
+}
