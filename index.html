@@ -63,20 +63,20 @@
       <form action="https://formspree.io/f/mqpkbeqo" method="POST" id="inquiryForm">
         <input type="hidden" name="_subject" value="New Sun E. Social Event Inquiry">
         <div class="form-row">
-          <label>First name<input name="first_name" autocomplete="given-name" required></label>
-          <label>Last name<input name="last_name" autocomplete="family-name" required></label>
+          <label>First name<input name="first_name" autocomplete="given-name" placeholder="Amina" required></label>
+          <label>Last name<input name="last_name" autocomplete="family-name" placeholder="Khan" required></label>
         </div>
         <div class="form-row">
-          <label>Email address<input name="email" type="email" autocomplete="email" required></label>
-          <label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label>
+          <label>Email address<input name="email" type="email" autocomplete="email" placeholder="amina@example.com" required></label>
+          <label>Phone number<input name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" required></label>
         </div>
         <div class="form-row">
-          <label>Event date<input name="event_date" type="date" required></label>
+          <label>Event date<input name="event_date" type="date" placeholder="MM/DD/YYYY" required></label>
           <label>Type of event<input name="occasion" type="text" placeholder="Wedding, birthday, shower, etc." required></label>
         </div>
         <div class="form-row">
-          <label>Event location<input name="location" placeholder="City, State" required></label>
-          <label>Estimated guest count<input name="guest_count" type="number" min="1" required></label>
+          <label>Event location<input name="location" placeholder="Edison, NJ" required></label>
+          <label>Estimated guest count<input name="guest_count" type="number" min="1" placeholder="75" required></label>
         </div>
         <label>Tell us about your event<textarea name="message" rows="4" placeholder="Share your vision, timing, dietary considerations, or anything else we should know." required></textarea></label>
         <label class="consent"><input type="checkbox" name="inquiry_acknowledgement" value="Confirmed" required><span>I understand this is an inquiry and does not reserve my date.</span></label>
