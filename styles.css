@@ -72,3 +72,25 @@ footer{padding-top:42px;padding-bottom:42px}
   font-size:1.05rem;
 }
 .inquiry textarea{min-height:145px}
+
+
+/* Sun E. Social + TH3NOMADS package offer */
+.partner-package{
+  margin:0 7vw 76px;
+  padding:42px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:7vw;
+  align-items:center;
+  border:1px solid var(--gold);
+  border-radius:12px;
+  background:var(--ivory);
+}
+.partner-package h2{font-size:clamp(2.8rem,4.8vw,5.2rem)}
+.partner-package-copy p{margin:0 0 24px;color:var(--muted);font:400 1.15rem/1.7 Georgia,serif}
+.partner-package-copy strong{color:var(--berry)}
+@media(max-width:900px){.partner-package{grid-template-columns:1fr;gap:30px}}
+@media(max-width:600px){
+  .partner-package{margin:0 22px 54px;padding:30px 22px}
+  .partner-package h2{font-size:2.65rem}
+}
