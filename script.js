@@ -1,5 +1,24 @@
 const form = document.querySelector("#inquiryForm");
 const status = document.querySelector("#formStatus");
+const phone = form.querySelector("input[name='phone']");
+
+phone.addEventListener("input", () => {
+  let digits = phone.value.replace(/\D/g, "");
+
+  if (digits.length === 11 && digits.startsWith("1")) {
+    digits = digits.slice(1);
+  }
+
+  digits = digits.slice(0, 10);
+
+  if (digits.length <= 3) {
+    phone.value = digits ? `(${digits}` : "";
+  } else if (digits.length <= 6) {
+    phone.value = `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  } else {
+    phone.value = `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+  }
+});
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();

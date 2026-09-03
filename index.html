@@ -68,7 +68,7 @@
         </div>
         <div class="form-row">
           <label>Email address<input name="email" type="email" autocomplete="email" placeholder="example@gmail.com" required></label>
-          <label>Phone number<input name="phone" type="tel" autocomplete="tel" placeholder="(###) ###-####" required></label>
+          <label>Phone number<input name="phone" type="tel" autocomplete="tel" inputmode="numeric" maxlength="14" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" title="Enter a 10-digit phone number" placeholder="(###) ###-####" required></label>
         </div>
         <div class="form-row">
           <label>Event date<input name="event_date" type="date" required></label>
@@ -86,6 +86,6 @@
     </section>
   </main>
   <footer><img src="assets/logo.webp" alt="Sun E. Social"><p>The little cart behind the big moments.</p><small>© 2026 Sun E. Social. All rights reserved.</small></footer>
-  <script src="script.js"></script>
+  <script src="script.js?v=20260903-1"></script>
 </body>
 </html>
