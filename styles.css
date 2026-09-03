@@ -94,3 +94,13 @@ footer{padding-top:42px;padding-bottom:42px}
   .partner-package{margin:0 22px 54px;padding:30px 22px}
   .partner-package h2{font-size:2.65rem}
 }
+
+
+.package-logos{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:2px}
+.package-logos a{width:96px;height:96px;border-radius:50%;display:grid;place-items:center;overflow:hidden;border:1px solid var(--gold);background:#fff}
+.package-logos img{width:100%;height:100%;object-fit:cover}
+.package-logos span{color:var(--gold);font:400 2rem Georgia,serif}
+@media(max-width:600px){
+  .package-logos{gap:14px}
+  .package-logos a{width:78px;height:78px}
+}
