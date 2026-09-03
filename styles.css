@@ -49,6 +49,8 @@ footer{padding-top:42px;padding-bottom:42px}
 .statement>p:last-child{
   max-width:680px;
   padding:28px 30px;
+  text-align:center;
+  justify-self:center;
   background:transparent;
   color:var(--muted);
   border:1px solid var(--gold);
