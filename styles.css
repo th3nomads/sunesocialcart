@@ -35,3 +35,12 @@ footer{padding-top:42px;padding-bottom:42px}
   .cart-showcase{padding-bottom:54px}
   footer{padding-top:36px;padding-bottom:36px}
 }
+
+/* Close the gap between the opening description and experience section. */
+.hero .lede{margin-bottom:0}
+.hero{padding-bottom:24px}
+.statement{padding-top:38px}
+@media(max-width:600px){
+  .hero{padding-bottom:22px}
+  .statement{padding-top:34px}
+}
