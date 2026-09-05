@@ -302,3 +302,9 @@ footer .instagram-link:hover{color:#fff}
 
 /* Keep the partnership deal visible below the sticky navigation. */
 .partner-package{scroll-margin-top:110px}
+
+
+/* Tighten the experience heading only on desktop. */
+@media(min-width:901px){
+  .statement{row-gap:18px}
+}
