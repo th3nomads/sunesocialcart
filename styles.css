@@ -458,3 +458,132 @@ footer .instagram-link:hover{color:#fff}
     height:auto;
   }
 }
+
+
+/* Tiered Sun E. Signature package pricing. */
+.signature-package-details{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+}
+.signature-package-description{
+  max-width:760px;
+  margin:22px 0 26px;
+  color:var(--muted);
+  font:400 1.08rem/1.75 Georgia,'Times New Roman',serif;
+}
+.signature-package-description strong{color:var(--ink);font-weight:700}
+.signature-pricing h3{
+  margin:0 0 14px;
+  color:var(--berry);
+  font-size:.72rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+}
+.signature-price-tiers{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+.signature-price-tier{
+  padding:18px 14px;
+  border:1px solid rgba(212,154,85,.68);
+  border-radius:8px;
+  text-align:center;
+}
+.signature-price-tier span{
+  display:block;
+  margin-bottom:10px;
+  color:var(--muted);
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.signature-price-tier strong{
+  display:block;
+  color:var(--berry);
+  font:400 2.25rem/1 Georgia,'Times New Roman',serif;
+}
+.signature-price-tier small{
+  color:var(--muted);
+  font:700 .68rem/1 Arial,Helvetica,sans-serif;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.signature-minimum{
+  margin:13px 0 24px;
+  color:var(--ink);
+  font-size:.76rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.signature-package-details>.button{align-self:flex-start}
+
+@media(max-width:700px){
+  .signature-package-description{margin:18px 0 22px;font-size:1rem}
+  .signature-price-tiers{gap:7px}
+  .signature-price-tier{padding:15px 6px}
+  .signature-price-tier span{font-size:.59rem;letter-spacing:.04em}
+  .signature-price-tier strong{font-size:1.8rem}
+  .signature-price-tier small{display:block;margin-top:5px;font-size:.56rem}
+}
+
+
+/* Cart service and setup fee. */
+.cart-service-fee{
+  margin:0 0 24px;
+  padding:20px;
+  border:1px solid rgba(212,154,85,.68);
+  border-radius:8px;
+  background:rgba(212,154,85,.05);
+}
+.cart-service-heading{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:18px;
+  margin-bottom:14px;
+}
+.cart-service-heading h3{
+  margin:0;
+  color:var(--berry);
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.cart-service-heading strong{
+  color:var(--berry);
+  font:400 1.8rem/1 Georgia,'Times New Roman',serif;
+  white-space:nowrap;
+}
+.cart-service-heading strong span{
+  color:var(--muted);
+  font:700 .68rem/1 Arial,Helvetica,sans-serif;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+.cart-service-fee>p:not(.travel-fee-note){
+  margin:0 0 8px;
+  font-weight:700;
+}
+.cart-service-fee ul{
+  margin:0;
+  padding-left:20px;
+  color:var(--muted);
+  line-height:1.65;
+}
+.cart-service-fee .travel-fee-note{
+  margin:14px 0 0;
+  color:var(--ink);
+  font-size:.78rem;
+  font-weight:700;
+}
+
+@media(max-width:520px){
+  .cart-service-heading{display:block}
+  .cart-service-heading strong{display:block;margin-top:10px}
+}
