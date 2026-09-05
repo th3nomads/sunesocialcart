@@ -157,3 +157,48 @@ footer .instagram-link:hover{color:#fff}
   text-transform:uppercase;
 }
 .inquiry .social-links a:hover{color:#fff;border-color:#fff}
+
+
+/* Packages & Pricing page */
+.site-header nav a[aria-current="page"]{color:var(--berry)}
+.packages-page{background:var(--paper)}
+.packages-hero{padding:70px 7vw 54px;max-width:1500px;margin:0 auto}
+.packages-hero h1{margin:0;font:400 clamp(3.8rem,7vw,7rem)/.92 Georgia,'Times New Roman',serif;letter-spacing:-.05em}
+.packages-hero>p:last-child{max-width:720px;margin:26px 0 0;color:var(--muted);font-size:1.05rem;line-height:1.7}
+.package-list{padding:0 7vw 78px;max-width:1500px;margin:0 auto}
+.signature-package{display:grid;grid-template-columns:.82fr 1.18fr;overflow:hidden;border:1px solid var(--gold);border-radius:14px;background:var(--ivory);box-shadow:0 22px 60px rgba(59,29,38,.1)}
+.signature-package-image{min-height:100%;background:var(--dark)}
+.signature-package-image img{width:100%;height:100%;min-height:690px;object-fit:cover;object-position:center}
+.signature-package-details{padding:44px}
+.signature-package-details h2{font-size:clamp(2.8rem,4.5vw,5rem)}
+.package-price{display:flex;align-items:baseline;gap:14px;margin:26px 0}
+.package-price strong{color:var(--berry);font:400 3.5rem/1 Georgia,'Times New Roman',serif}
+.package-price span{color:var(--muted);font-size:.84rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.location-pricing{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px}
+.location-pricing>div{padding:17px;border:1px solid rgba(212,154,85,.62);border-radius:8px}
+.location-pricing span,.location-pricing strong,.location-pricing small{display:block}
+.location-pricing span{margin-bottom:7px;color:var(--muted);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.location-pricing strong{font:400 1.2rem Georgia,'Times New Roman',serif}
+.location-pricing small{margin-top:5px;color:var(--muted)}
+.package-information{display:grid;grid-template-columns:1fr .78fr;gap:32px;margin-bottom:32px}
+.package-information h3{margin:0 0 14px;font:400 1.45rem Georgia,'Times New Roman',serif}
+.package-information ul{margin:0;padding-left:19px;color:var(--muted);line-height:1.75}
+.package-upgrades{padding-left:28px;border-left:1px solid var(--line)}
+.package-upgrades p{color:var(--muted);line-height:1.7}
+.package-upgrades .pricing-note{margin:-7px 0 10px;color:var(--berry);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:1000px){
+  .signature-package{grid-template-columns:1fr}
+  .signature-package-image img{height:440px;min-height:0}
+}
+@media(max-width:700px){
+  .packages-hero{padding:48px 22px 38px}
+  .packages-hero h1{font-size:3.5rem}
+  .package-list{padding:0 22px 58px}
+  .signature-package-image img{height:290px}
+  .signature-package-details{padding:29px 22px}
+  .signature-package-details h2{font-size:2.8rem}
+  .package-price{display:block}
+  .package-price span{display:block;margin-top:8px}
+  .location-pricing,.package-information{grid-template-columns:1fr}
+  .package-upgrades{padding:24px 0 0;border-left:0;border-top:1px solid var(--line)}
+}
