@@ -90,13 +90,18 @@
           <label>Phone number<input name="phone" type="tel" autocomplete="tel" inputmode="numeric" maxlength="14" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" title="Enter a 10-digit phone number" placeholder="(###) ###-####" required></label>
         </div>
         <div class="form-row">
-          <label>Event date<input name="event_date" type="date" required></label>
+          <label>Package<select name="package" required>
+            <option value="" selected disabled>Select a package</option>
+            <option>Sun E. Signature Charcuterie Cart</option>
+            <option>Custom Curate Dream Cart</option>
+          </select></label>
           <label>Type of event<input name="occasion" type="text" placeholder="Wedding, birthday, shower, etc." required></label>
         </div>
         <div class="form-row">
+          <label>Event date<input name="event_date" type="date" required></label>
           <label>Event location<input name="location" required></label>
-          <label>Estimated guest count<input name="guest_count" type="number" min="1" required></label>
         </div>
+        <label>Estimated guest count<input name="guest_count" type="number" min="1" required></label>
         <label>Tell us about your event<textarea name="message" rows="4" placeholder="Share your vision, timing, dietary considerations, or anything else we should know." required></textarea></label>
         <label class="consent"><input type="checkbox" name="inquiry_acknowledgement" value="Confirmed" required><span>I understand this is an inquiry and does not reserve my date.</span></label>
         <button class="button primary" type="submit">Send inquiry</button>
