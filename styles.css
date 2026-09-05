@@ -298,3 +298,7 @@ footer .instagram-link:hover{color:#fff}
 @media(min-width:901px){
   .hero{min-height:auto}
 }
+
+
+/* Keep the partnership deal visible below the sticky navigation. */
+.partner-package{scroll-margin-top:110px}
