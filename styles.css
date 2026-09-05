@@ -227,3 +227,13 @@ footer .instagram-link:hover{color:#fff}
   .dream-cart{margin-top:24px;padding:30px 22px}
   .dream-cart h2{font-size:2.7rem}
 }
+
+
+/* Keep Packages & Pricing reachable on mobile. */
+@media(max-width:900px){
+  .site-header nav .packages-link{display:inline-flex}
+}
+@media(max-width:600px){
+  .site-header nav{gap:8px}
+  .site-header nav .packages-link{font-size:.58rem;letter-spacing:.08em;white-space:nowrap}
+}
