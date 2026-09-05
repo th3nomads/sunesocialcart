@@ -279,3 +279,16 @@ footer .instagram-link:hover{color:#fff}
   .site-header{padding:7px 16px 10px}
   .site-header nav{gap:6px}
 }
+
+
+/* Preserve the complete portrait pricing photo on phones. */
+@media(max-width:700px){
+  .signature-package-image img{
+    width:100%;
+    height:auto;
+    min-height:0;
+    aspect-ratio:2/3;
+    object-fit:cover;
+    object-position:center top;
+  }
+}
