@@ -157,15 +157,3 @@ footer .instagram-link:hover{color:#fff}
   text-transform:uppercase;
 }
 .inquiry .social-links a:hover{color:#fff;border-color:#fff}
-
-
-/* Current packages */
-.current-packages{
-  padding:76px 7vw;
-  background:var(--paper);
-}
-.current-packages h2{font-size:clamp(3.2rem,5.5vw,6rem)}
-@media(max-width:600px){
-  .current-packages{padding:54px 22px}
-  .current-packages h2{font-size:3.2rem}
-}
