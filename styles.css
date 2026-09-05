@@ -202,3 +202,28 @@ footer .instagram-link:hover{color:#fff}
   .location-pricing,.package-information{grid-template-columns:1fr}
   .package-upgrades{padding:24px 0 0;border-left:0;border-top:1px solid var(--line)}
 }
+
+
+/* Custom dream cart */
+.dream-cart{
+  margin-top:34px;
+  padding:42px;
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:7vw;
+  align-items:center;
+  border:1px solid var(--gold);
+  border-radius:14px;
+  background:
+    radial-gradient(circle at 12% 20%,rgba(212,154,85,.13),transparent 36%),
+    var(--dark);
+  color:#fff;
+}
+.dream-cart h2{font-size:clamp(2.8rem,4.8vw,5.2rem)}
+.dream-cart-copy p{max-width:690px;margin:0 0 18px;color:#d4c9c6;font:400 1.08rem/1.75 Georgia,'Times New Roman',serif}
+.dream-cart-copy .button{margin-top:10px}
+@media(max-width:900px){.dream-cart{grid-template-columns:1fr;gap:28px}}
+@media(max-width:700px){
+  .dream-cart{margin-top:24px;padding:30px 22px}
+  .dream-cart h2{font-size:2.7rem}
+}
