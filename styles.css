@@ -308,3 +308,46 @@ footer .instagram-link:hover{color:#fff}
 @media(min-width:901px){
   .statement{row-gap:18px}
 }
+
+
+/* Compact spacing system across both pages. */
+@media(min-width:901px){
+  .hero{padding-top:30px;padding-bottom:20px;gap:4vw}
+  .statement{padding:42px 7vw;row-gap:16px;column-gap:5vw}
+  .cart-showcase{padding:0 7vw 52px;gap:5vw}
+  .process{padding:62px 7vw;gap:6vw}
+  .process li{padding:22px 0}
+  .partner-package{margin-bottom:46px;padding:24px 28px;gap:18px 4vw}
+  .inquiry{padding:62px 7vw;gap:6vw}
+  footer{padding-top:34px;padding-bottom:34px}
+
+  .packages-hero{padding-top:48px;padding-bottom:34px}
+  .packages-hero>p:last-child{margin-top:18px}
+  .package-list{padding-bottom:54px}
+  .signature-package-details{padding:34px}
+  .package-price{margin:20px 0}
+  .location-pricing{margin-bottom:24px}
+  .package-information{gap:24px;margin-bottom:24px}
+  .dream-cart{margin-top:26px;padding:32px;gap:5vw}
+}
+
+@media(max-width:900px){
+  .hero{padding-bottom:30px}
+  .statement{padding-top:38px;padding-bottom:38px;gap:18px}
+  .cart-showcase{padding-bottom:42px}
+  .process{padding-top:46px;padding-bottom:46px;gap:34px}
+  .process li{padding:22px 0}
+  .partner-package{margin-bottom:36px;padding:24px 22px;gap:18px}
+  .inquiry{padding-top:48px;padding-bottom:48px;gap:36px}
+  .inquiry form{gap:20px}
+  footer{padding-top:30px;padding-bottom:30px}
+
+  .packages-hero{padding-top:36px;padding-bottom:26px}
+  .packages-hero>p:last-child{margin-top:18px}
+  .package-list{padding-bottom:42px}
+  .signature-package-details{padding:26px 22px}
+  .package-price{margin:20px 0}
+  .location-pricing{margin-bottom:24px}
+  .package-information{gap:22px;margin-bottom:24px}
+  .dream-cart{margin-top:22px;padding:26px 22px;gap:18px}
+}
