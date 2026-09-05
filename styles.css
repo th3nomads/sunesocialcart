@@ -429,3 +429,15 @@ footer .instagram-link:hover{color:#fff}
   .partner-package-copy p{max-width:680px;margin:0 auto 16px}
   .partner-package-copy .button{margin-left:auto;margin-right:auto}
 }
+
+
+/* Keep the desktop partnership discount message on one line. */
+@media(min-width:901px){
+  .partner-package>div:not(.package-logos),
+  .partner-package-copy{max-width:900px}
+  .partner-package-copy p{
+    max-width:none;
+    white-space:nowrap;
+    font-size:clamp(.9rem,1.05vw,1.02rem);
+  }
+}
