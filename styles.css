@@ -292,3 +292,9 @@ footer .instagram-link:hover{color:#fff}
     object-position:center top;
   }
 }
+
+
+/* Keep the desktop introduction compact instead of filling the viewport. */
+@media(min-width:901px){
+  .hero{min-height:auto}
+}
