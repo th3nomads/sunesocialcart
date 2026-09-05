@@ -445,3 +445,16 @@ footer .instagram-link:hover{color:#fff}
     font-size:clamp(.9rem,1.05vw,1.02rem);
   }
 }
+
+
+/* Remove the dark block beneath the Packages & Pricing photo. */
+.signature-package-image{
+  background:transparent;
+  overflow:hidden;
+}
+@media(max-width:1000px){
+  .signature-package-image{
+    min-height:0;
+    height:auto;
+  }
+}
