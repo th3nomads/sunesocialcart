@@ -45,3 +45,24 @@ form.addEventListener("submit", async (event) => {
     button.textContent = "Send inquiry";
   }
 });
+
+
+// Highlight only the navigation item for the section currently selected.
+const navLinks = document.querySelectorAll(".site-header nav a");
+
+function updateActiveNav() {
+  const currentHash = window.location.hash;
+  navLinks.forEach((link) => link.removeAttribute("aria-current"));
+
+  if (!currentHash) return;
+
+  const activeLink = Array.from(navLinks).find((link) => {
+    const href = link.getAttribute("href") || "";
+    return href === currentHash;
+  });
+
+  if (activeLink) activeLink.setAttribute("aria-current", "page");
+}
+
+updateActiveNav();
+window.addEventListener("hashchange", updateActiveNav);
