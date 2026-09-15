@@ -610,3 +610,51 @@ footer .instagram-link:hover{color:#fff}
     letter-spacing:-.045em;
   }
 }
+
+
+/* Parfait, açaí, and oatmeal options. */
+.bar-options{
+  margin:0 0 26px;
+}
+.bar-options>h3{
+  margin:0 0 14px;
+  color:var(--berry);
+  font-size:.72rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+}
+.bar-option-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+}
+.bar-option-grid article{
+  padding:15px 13px;
+  border:1px solid rgba(212,154,85,.68);
+  border-radius:8px;
+  background:rgba(255,255,255,.58);
+}
+.bar-option-grid strong,
+.bar-option-grid span{
+  display:block;
+}
+.bar-option-grid strong{
+  margin-bottom:7px;
+  color:var(--berry);
+  font:400 1.05rem/1.2 Georgia,'Times New Roman',serif;
+}
+.bar-option-grid span{
+  color:var(--muted);
+  font-size:.78rem;
+  line-height:1.5;
+}
+.bar-options>p{
+  margin:11px 0 0;
+  color:var(--muted);
+  font-size:.76rem;
+  line-height:1.5;
+}
+@media(max-width:700px){
+  .bar-option-grid{grid-template-columns:1fr}
+}
