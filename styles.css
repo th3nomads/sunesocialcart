@@ -587,3 +587,21 @@ footer .instagram-link:hover{color:#fff}
   .cart-service-heading{display:block}
   .cart-service-heading strong{display:block;margin-top:10px}
 }
+
+
+/* Parfait Bar package */
+.parfait-package{
+  margin-top:34px;
+  grid-template-columns:1fr;
+  background:
+    radial-gradient(circle at 88% 12%,rgba(212,154,85,.12),transparent 34%),
+    var(--ivory);
+}
+.parfait-package .signature-package-details{
+  max-width:1040px;
+  width:100%;
+  margin:0 auto;
+}
+@media(max-width:700px){
+  .parfait-package{margin-top:24px}
+}
