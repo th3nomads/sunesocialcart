@@ -689,3 +689,10 @@ h2,.packages-hero h1{line-height:.94}
 @media(min-width:901px){.hero{grid-template-columns:1.25fr .75fr}}
 @media(max-width:900px){.hero-tagline{font-size:clamp(3rem,8vw,4.8rem)!important}}
 @media(max-width:600px){.hero-tagline{font-size:clamp(2.15rem,10.2vw,3.2rem)!important;letter-spacing:-.04em}}
+
+
+/* Keep the custom Dream Cart heading on two intentional lines. */
+.dream-cart-title{font-size:clamp(2.65rem,4vw,4.7rem)!important;line-height:.92!important}
+.dream-cart-title>span,.dream-cart-title>em{display:block;white-space:nowrap}
+@media(min-width:901px){.dream-cart{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.dream-cart-title{font-size:clamp(2.2rem,10vw,3rem)!important}}
