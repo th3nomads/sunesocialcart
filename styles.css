@@ -658,3 +658,26 @@ footer .instagram-link:hover{color:#fff}
 @media(max-width:700px){
   .bar-option-grid{grid-template-columns:1fr}
 }
+
+
+/* Elegant editorial typography refresh */
+:root{--font-display:'Cormorant Garamond',Georgia,'Times New Roman',serif;--font-sans:'Manrope',Arial,Helvetica,sans-serif}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body,button,input,select,textarea{font-family:var(--font-sans)}
+body{font-weight:400;letter-spacing:-.008em}
+.hero h1,h1,h2,h3,.statement>p:last-child,.features span,.process b,.features h3,.process h3,footer p,.partner-package-copy p,.packages-hero h1,.package-price strong,.location-pricing strong,.package-information h3,.dream-cart-copy p,.signature-package-description,.signature-price-tier strong,.cart-service-heading strong,.bar-option-grid strong{font-family:var(--font-display)}
+.hero h1,h1,h2,h3{text-wrap:balance}
+p,li{text-wrap:pretty}
+.hero h1,h2,.packages-hero h1{letter-spacing:-.035em}
+.hero h1{line-height:.89}
+h2,.packages-hero h1{line-height:.94}
+.site-header nav,.eyebrow,.button,.inquiry label,.signature-pricing h3,.signature-minimum,.cart-service-heading h3,.bar-options>h3,footer .instagram-link,.inquiry .social-links a{font-weight:600}
+.site-header nav a,.eyebrow,.button,.package-title,.signature-pricing h3,.signature-minimum,.cart-service-heading h3,.cart-service-heading strong,.bar-options>h3,.signature-price-tier strong{white-space:nowrap}
+.signature-price-tier small{display:inline;margin:0;font-family:var(--font-sans)}
+.lede,.showcase-copy>p:not(.eyebrow),.inquiry-intro>p:last-child,.packages-hero>p:last-child{letter-spacing:0}
+@media(max-width:600px){
+  .hero h1{font-size:clamp(3.2rem,15vw,4rem)}
+  .statement h2,.process h2,.inquiry h2{font-size:clamp(2.75rem,13vw,3.35rem)}
+  .eyebrow{letter-spacing:.12em}
+  .site-header nav a,.site-header nav a:not(.nav-cta),.site-header nav .packages-link{white-space:nowrap;font-size:.56rem}
+}
