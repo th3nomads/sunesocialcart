@@ -681,3 +681,11 @@ h2,.packages-hero h1{line-height:.94}
   .eyebrow{letter-spacing:.12em}
   .site-header nav a,.site-header nav a:not(.nav-cta),.site-header nav .packages-link{white-space:nowrap;font-size:.56rem}
 }
+
+
+/* Keep the homepage slogan on exactly two intentional lines. */
+.hero-tagline{font-size:clamp(2.6rem,4.4vw,6.2rem)!important;line-height:.9!important}
+.hero-tagline>span{display:block;white-space:nowrap}
+@media(min-width:901px){.hero{grid-template-columns:1.25fr .75fr}}
+@media(max-width:900px){.hero-tagline{font-size:clamp(3rem,8vw,4.8rem)!important}}
+@media(max-width:600px){.hero-tagline{font-size:clamp(2.15rem,10.2vw,3.2rem)!important;letter-spacing:-.04em}}
