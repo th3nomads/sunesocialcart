@@ -710,3 +710,15 @@ h2,.packages-hero h1{line-height:.94}
   .process h2 em,.statement h2 em,.inquiry h2 em,.showcase-copy h2 em,.partner-package h2 em{white-space:nowrap}
   .process>div,.statement,.inquiry-intro,.showcase-copy,.partner-package>div{min-width:0}
 }
+
+
+/* Restore natural spacing around styled words in mobile headings.
+   Keep headings compact without nowrap forcing adjacent text together. */
+@media(max-width:600px){
+  .process h2 em,.statement h2 em,.inquiry h2 em,.showcase-copy h2 em,.partner-package h2 em{
+    white-space:normal;
+  }
+  .process h2,.statement h2,.inquiry h2,.showcase-copy h2,.partner-package h2{
+    word-spacing:normal;
+  }
+}
