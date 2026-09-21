@@ -696,3 +696,17 @@ h2,.packages-hero h1{line-height:.94}
 .dream-cart-title>span,.dream-cart-title>em{display:block;white-space:nowrap}
 @media(min-width:901px){.dream-cart{grid-template-columns:1fr 1fr}}
 @media(max-width:700px){.dream-cart-title{font-size:clamp(2.2rem,10vw,3rem)!important}}
+
+
+/* Mobile heading rhythm: keep prominent copy to one or two clean lines. */
+@media(max-width:600px){
+  .statement h2,.process h2,.inquiry h2,.showcase-copy h2,.partner-package h2{
+    font-size:clamp(2.15rem,10vw,2.75rem);
+    line-height:.92;
+    letter-spacing:-.04em;
+  }
+  .process h2{font-size:clamp(2rem,9.4vw,2.6rem)}
+  .process h2 br,.statement h2 br,.inquiry h2 br,.showcase-copy h2 br,.partner-package h2 br{display:none}
+  .process h2 em,.statement h2 em,.inquiry h2 em,.showcase-copy h2 em,.partner-package h2 em{white-space:nowrap}
+  .process>div,.statement,.inquiry-intro,.showcase-copy,.partner-package>div{min-width:0}
+}
