@@ -13,13 +13,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-      - name: Correct Google Analytics tag on site pages
+      - name: Install Google tag requested by Analytics
         shell: python
         run: |
           from pathlib import Path
 
-          old_id = 'G-JB9M6HTVHT'
-          measurement_id = 'G-RMCDJNTGP6'
+          old_id = 'G-RMCDJNTGP6'
+          google_tag_id = 'G-JB9M6HTVHT'
 
           for filename in ('index.html', 'packages.html'):
               path = Path(filename)
@@ -27,27 +27,27 @@ jobs:
                   continue
               text = path.read_text(encoding='utf-8')
               if old_id in text:
-                  text = text.replace(old_id, measurement_id)
-              elif f'gtag/js?id={measurement_id}' not in text:
+                  text = text.replace(old_id, google_tag_id)
+              elif f'gtag/js?id={google_tag_id}' not in text:
                   tag = f'''  <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id={measurement_id}"></script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id={google_tag_id}"></script>
             <script>
               window.dataLayer = window.dataLayer || [];
               function gtag(){{dataLayer.push(arguments);}}
               gtag('js', new Date());
-              gtag('config', '{measurement_id}');
+              gtag('config', '{google_tag_id}');
             </script>
           '''
                   text = text.replace('<head>\n', '<head>\n' + tag, 1)
               path.write_text(text, encoding='utf-8')
-      - name: Commit GA4 correction
+      - name: Commit Google tag installation
         run: |
           if git diff --quiet -- index.html packages.html; then
-            echo "Correct GA4 tag already installed"
+            echo "Requested Google tag already installed"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html packages.html
-          git commit -m "Correct Sun E Social GA4 tracking ID"
+          git commit -m "Install Sun E Social Google tag"
           git push origin main
