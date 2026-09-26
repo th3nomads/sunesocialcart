@@ -13,22 +13,25 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-      - name: Install Google tag requested by Analytics
+      - name: Install independent Sun E Social Google tag
         shell: python
         run: |
           from pathlib import Path
 
-          old_id = 'G-RMCDJNTGP6'
-          google_tag_id = 'G-JB9M6HTVHT'
+          old_ids = ('G-RMCDJNTGP6', 'G-JB9M6HTVHT')
+          google_tag_id = 'GT-P82H5LX7'
 
           for filename in ('index.html', 'packages.html'):
               path = Path(filename)
               if not path.exists():
                   continue
               text = path.read_text(encoding='utf-8')
-              if old_id in text:
-                  text = text.replace(old_id, google_tag_id)
-              elif f'gtag/js?id={google_tag_id}' not in text:
+              replaced = False
+              for old_id in old_ids:
+                  if old_id in text:
+                      text = text.replace(old_id, google_tag_id)
+                      replaced = True
+              if not replaced and f'gtag/js?id={google_tag_id}' not in text:
                   tag = f'''  <!-- Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id={google_tag_id}"></script>
             <script>
@@ -43,11 +46,11 @@ jobs:
       - name: Commit Google tag installation
         run: |
           if git diff --quiet -- index.html packages.html; then
-            echo "Requested Google tag already installed"
+            echo "Independent Sun E Social Google tag already installed"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html packages.html
-          git commit -m "Install Sun E Social Google tag"
+          git commit -m "Install independent Sun E Social Google tag"
           git push origin main
