@@ -218,14 +218,18 @@ footer .instagram-link:hover{color:#fff}
 .seasonal-menu-content{padding:0 24px 28px;border-top:1px solid var(--gold)}
 .seasonal-menu-content h3{margin:26px 0 8px;color:var(--berry);font:500 1.7rem/1.2 var(--font-display)}
 .seasonal-menu-content>p,.seasonal-stick-option p{color:var(--muted);line-height:1.65}
-.seasonal-package-pricing{margin-top:24px;padding:25px 28px;border:1px solid rgba(212,154,85,.68);border-radius:8px;background:var(--ivory)}
+.seasonal-package-pricing{margin:24px 0 20px}
 .seasonal-price-label{display:block;color:var(--berry);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-.seasonal-package-pricing>strong{display:block;margin:4px 0 14px;color:var(--berry);font:500 clamp(3rem,6vw,4.5rem)/1 var(--font-display)}
+.seasonal-package-pricing>strong{display:block;margin:4px 0 12px;color:var(--berry);font:500 clamp(3rem,6vw,4.5rem)/1 var(--font-display)}
 .seasonal-package-pricing p{margin:8px 0 0;color:var(--ink);font:500 clamp(1.3rem,2.5vw,1.65rem)/1.3 var(--font-display)}
 .seasonal-package-pricing p b{color:var(--berry);font-weight:600}
-@media(max-width:700px){.seasonal-package-pricing{padding:22px 18px}}
+.seasonal-inclusions{padding:22px 26px;border:1px solid rgba(212,154,85,.68);border-radius:8px;background:var(--ivory)}
+.seasonal-inclusions h4{margin:0 0 12px;color:var(--berry);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.seasonal-inclusions ul{margin:0;padding-left:20px;color:var(--ink);line-height:1.75}
+.seasonal-inclusions li{padding-left:3px}
+.seasonal-inclusions .seasonal-travel-note{margin:14px 0 0;color:var(--muted);font-size:.78rem;line-height:1.5}
+@media(max-width:700px){.seasonal-inclusions{padding:20px 18px}}
 .seasonal-stick-option{margin-top:24px;padding-top:6px;border-top:1px solid var(--gold)}
-.seasonal-menu-content .seasonal-fee-note{margin:22px 0;font-size:.9rem}
 @media(max-width:700px){.seasonal-cart{margin-top:24px;padding:29px 22px}.seasonal-menu summary{padding:18px}.seasonal-menu-hint{font-size:.75rem}.seasonal-menu-content{padding:0 18px 24px}}
 .dream-cart{
   margin-top:34px;
