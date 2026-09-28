@@ -762,3 +762,5 @@ h2,.packages-hero h1{line-height:.94}
 }
 
 .instant-print-addon{margin:3rem 0;padding:clamp(1.5rem,4vw,3rem);border:1px solid rgba(187,40,90,.25);background:#fff8fa}.instant-print-addon h2{font-size:clamp(2rem,4vw,3rem);margin:.5rem 0}.instant-print-addon p:not(.eyebrow){max-width:42rem;line-height:1.7}.instant-print-addon .button{margin-top:1rem}
+
+.instant-print-addon .instax-photo{max-width:650px;margin:1.5rem 0}.instant-print-addon .instax-photo img{display:block;width:100%;height:auto;border-radius:8px}.instant-print-addon .instax-photo figcaption{font:400 .75rem/1.5 Manrope,Arial,sans-serif;color:var(--muted);margin-top:8px}.instant-print-addon .instax-photo figcaption a{color:inherit}
