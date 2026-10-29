@@ -774,3 +774,19 @@ h2,.packages-hero h1{line-height:.94}
 .caramel-apple-details>h3:first-child{margin-top:0}
 .caramel-apple-details>p{color:var(--muted);line-height:1.65}
 @media(max-width:800px){.caramel-apple-layout{grid-template-columns:1fr;gap:24px}.caramel-apple-photo{max-width:520px;width:100%;margin:0 auto}}
+
+/* Additional cart menus */
+.additional-menu{margin-top:34px;padding:clamp(24px,3vw,42px);border:1px solid var(--gold);border-radius:14px;background:var(--ivory)}
+.additional-menu h2{font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.05}
+.additional-menu-intro{margin:16px 0 26px;color:var(--muted);line-height:1.6}
+.additional-menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.additional-menu-card{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:24px 20px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+.additional-menu-card h3{font:500 1.65rem/1.15 var(--font-display);color:var(--ink);margin:0 0 18px}
+.additional-menu-price{margin:auto 0 20px;color:var(--berry)}
+.additional-menu-price span{display:block;margin-bottom:6px;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase}
+.additional-menu-price strong{font:500 2.6rem/1 var(--font-display)}
+.additional-menu-card .button{min-height:42px;padding:0 18px}
+.additional-menu-tagline{margin:26px 0 10px;font:italic 1.3rem/1.5 var(--font-display);color:var(--berry)}
+.additional-menu-note{margin:0;color:var(--muted);font-size:.85rem;line-height:1.65}
+@media(max-width:1000px){.additional-menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.additional-menu{margin-top:24px}.additional-menu-grid{grid-template-columns:1fr}.additional-menu-card{padding:22px}.additional-menu-card .button{width:auto}}
